@@ -33,10 +33,6 @@ class _SpinnerRenderSliver extends RenderSliver
   @override
   void performLayout() {
     _paintTransform = null;
-    if (child == null) {
-      geometry = SliverGeometry.zero;
-      return;
-    }
     final SliverConstraints constraints = this.constraints;
     child!.layout(constraints.asBoxConstraints(), parentUsesSize: true);
     final double childExtent;
