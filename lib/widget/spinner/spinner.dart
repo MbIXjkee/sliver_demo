@@ -81,7 +81,7 @@ class _SpinnerRenderSliver extends RenderSliver
 
   @override
   void paint(PaintingContext context, Offset offset) {
-    if (child != null && geometry!.visible) {
+    if (geometry!.visible) {
       _transformLayer.layer = context.pushTransform(
         needsCompositing,
         offset,
